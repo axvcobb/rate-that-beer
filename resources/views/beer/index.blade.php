@@ -7,11 +7,13 @@
             <div class="card">
                 <div class="card-header">BEER</div>
                 <div class="card-body">
-                  <ul>
-                    @foreach ($beers as $beer)
-                      <li>{{$beer->name}}</li>
-                    @endforeach
-                  </ul>
+                  @foreach ($beers as $beer)
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{$beer->name}}</h5>
+                    </div>
+                  </div>
+                  @endforeach
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ class BeerController extends Controller
     public function index()
     {
         $beers = Beer::all();
-        
+
         return view('beer.index', ['beers' => $beers ]);
     }
 
@@ -36,7 +36,7 @@ class BeerController extends Controller
      */
     public function create()
     {
-        //
+        return view('beer.create');
     }
 
     /**
@@ -47,7 +47,14 @@ class BeerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $beer = new Beer;
+        $beer->name = $request->name;
+        $beer->brewery = $request->brewery;
+        $beer->style = $request->style;
+        $beer->abv = $request->abv;
+        $beer->save();
+
+        return redirect('beer');
     }
 
     /**

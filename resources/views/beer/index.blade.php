@@ -11,6 +11,7 @@
                   <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title">{{$beer->name}}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{{ $beer->brewery }}</h6>
                     </div>
                   </div>
                   @endforeach

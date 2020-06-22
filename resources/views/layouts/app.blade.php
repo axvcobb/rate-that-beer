@@ -34,7 +34,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="beer">Beer</a>
+                        <a class="nav-link" href="/beer">Beer List</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/beer/create">Add A Beer</a>
                       </li>
                     </ul>
 
